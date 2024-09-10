@@ -1,0 +1,92 @@
+Challenge: Find the 5th Digit of the Key 🔢🗝️
+	
+	Welcome to the next challenge in our CTF event! 🎯🏆 Your mission, should you choose to accept it, is to unravel the mystery hidden within a labyrinth of C code 💻🧩. The program you're about to encounter is a tangled web 🕸️ of functions spread across multiple sections 📜, each calling the next in a seemingly endless loop of confusion 🔄🌀.
+
+To find the 6th digit of the key, you'll need to solve the entire program 🔍. But beware ⚠️! The code is designed to mislead and perplex 🧐, with circular dependencies ♾️ and hidden logic 🤯 that will test your debugging skills to the limit 🛠️💥. Only those with a keen eye 👀 and sharp wit 🤓 will be able to piece together the puzzle and extract the final digit 🧠🔢.
+
+Are you ready to dive in and conquer the code? 💪 The 6th digit awaits those brave enough to accept the challenge 🚀.
+
+Good luck 🍀, and may the best coder win! 🏅👨‍💻👩‍💻
+
+PROGRAM 1:
+
+
+#include <stdio.h>
+
+// Function prototypes
+int function2(int);
+
+// Call function2 from this file
+int function1(int value) {
+    printf("In function1: Value is %d\n", value);
+    return function2(value + 1); // Calling function2
+}
+
+// Entry point
+int main() {
+    int initial_value = 5; // Starting value
+    int key = function1(initial_value);
+    printf("The final key is: %d\n", key);
+    return 0;
+}
+
+PROGRAM 2:
+
+#include <stdio.h>
+
+// Function prototypes
+int function3(int);
+
+// Call function3 from this file
+int function2(int value) {
+    printf("In function2: Value is %d\n", value);
+    return function3(value * 2); // Calling function3
+}
+
+PROGRAM 3:
+
+
+#include <stdio.h>
+
+// Function prototypes
+int function1(int);
+
+// Call function1 from this file
+int function3(int value) {
+    printf("In function3: Value is %d\n", value);
+    return value % 10; // Final calculation of the key
+}
+
+
+
+
+Shinigamei ::
+		Final Clue:: Last but not Least this time I really hidden them in the realm of colors, potraits and Landscapes in the Master File
+		So I am sure u not gonna crack it up 😜😜😜😜😜😜
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
